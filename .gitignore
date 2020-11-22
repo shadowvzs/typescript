@@ -1,0 +1,5 @@
+project/node_modules
+project/.awcache/
+project/.vscode
+.vscode
+.git

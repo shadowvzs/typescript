@@ -1,0 +1,53 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "allowJs": true,
+        "sourceMap": true,
+        "noImplicitThis": false,
+        "noImplicitAny": false,
+        "alwaysStrict": true,
+        "skipLibCheck": false,
+        "strict": true,
+        "declaration": false,
+        "removeComments": true,
+        "module": "commonjs",
+        "noEmit": true,
+        "target": "esnext",
+        "rootDir": "src",
+        "esModuleInterop": true,
+        "jsx": "react",
+        "jsxFactory": "build",
+        "jsxFragmentFactory": "Fragment",
+        "plugins": [{ "transform": "../.." }],
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "strictPropertyInitialization": false,
+        "moduleResolution": "node",
+        "baseUrl": "./src",
+        "paths": {
+            "@components/*": ["components/*"],
+            "@core/*": ["core/*"],
+            "@model/*": ["model/*"],
+            "@decorators/*": ["decorators/*"],
+            "@service/*": ["services"],
+            "@pages/*": ["components/pages/*"],
+            "@layout/*": ["components/layout/*"],
+            "@typo": ["core/types/index"],
+            "@util/*": ["core/util/*"]
+        }
+    },
+    "include": [
+        "./src/*", 
+        "src/components/pages/todo/ArticlePage.tsx", 
+        "src/components/pages/home/HomePage.tsx", 
+        "src/components/layout/NavMenu.tsx"
+    ],
+    "awesomeTypescriptLoaderOptions": {
+        "useWebpackText": true,
+        "useCache": true,
+        "useTranspileModule": true,
+        "doTypeCheck": true,
+        "forkChecker": true
+    },
+    "exclude": [ "dist", "node_modules", "api", "backup", "v8-compile-cache-0", "test" ]
+}
